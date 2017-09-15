@@ -1,0 +1,126 @@
+
+body {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  background-color: #EC1F27;
+  font-size: 16pt;
+  padding-top: 20px;
+}
+
+
+#bodywrapper {
+  font-family: 'Josefin Slab', serif;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1px;
+  padding-bottom: 30px;
+  margin-bottom: 90px;
+  background-color: #FAFCFE;
+}
+
+table {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin:0;
+  padding:0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table tr {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+table th, table td {
+  text-align: center;
+}
+
+table th {
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: #FAFCFE;
+    width: 90%;
+  }
+
+  #bodywrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  table {
+    border: 0;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 10px;
+    display: block;
+    border-bottom: 2px solid #ddd;
+  }
+
+  table td {
+    display: block;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  table td.event_name {
+    font-weight: bold;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+  table td:before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+#cal_div {
+
+position: relative; padding-bottom: 75%; height: 0; overflow: hidden;
+
+}
+
+#cal_div iframe {
+
+position: absolute; top:0; left: 0; width: 100%; height: 100%;
+
+}
+img {
+  margin: auto;
+  padding-top: 15px;
+  /*max-width: 800px;*/
+  width: 100%;
+}
+
+td {
+  padding-left: 18px;
+  padding-bottom: 18px;
+}
+
+li {
+  padding-top: 9px;
+}
+
+.navy_text {
+  color: #000070;
+  font-weight: bold;
+}
+
+.blue_text {
+  color: #0000F0;
+  font-weight: bold;
+}
+
